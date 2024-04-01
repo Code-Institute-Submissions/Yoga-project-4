@@ -24,11 +24,14 @@ body {
 /* Header */
 header {
     background-color: yellow;
+    width: 100%;
     padding: 0 1rem;
     position: fixed;
     z-index: 99;
-    width: 100%;
     box-shadow: 0 2px 2px yellowgreen;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
 
 }
 header a {
@@ -39,8 +42,9 @@ header a {
 h1 {
     font-family: "Roboto Condensed", sans-serif;
     text-transform: uppercase;
-    letter-spacing: 2px;
     color: darkgreen;
+    letter-spacing: 2px;
+    
 }
 
 #menu {
@@ -60,12 +64,12 @@ h1 {
 
 /* Navbar styles with dropdown toggle */
 nav {
+    width: 100%;
     position: absolute;
     background-color: yellow;
-    width: 100%;
+    box-shadow: 0 2px 2px yellowgreen;
     left: 0;
     padding: 0 1rem;
-    box-shadow: 0 2px 2px yellowgreen;
     display: none;
     top: 100%;
 }
@@ -84,14 +88,78 @@ nav {
 }
 
 
+
+
+
 /* Main content */
 main {
     background-color: lightgrey;
     /* Make main element take up any surplus space to push footer down */
     flex: 1 0 auto;
+    margin-top: 47px;
 }
+
 
 /* Footer */
 footer {
     background-color: lightpink;
+}
+   
+
+#social-networks {
+    text-align: center;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-evenly;
+    list-style-type: none;
+}
+
+#social-networks i {
+    font-size: 160%;
+    padding: 5%;
+    color: yellowgreen;
+}
+
+/* Media query: tablets and larger (768px and up) */
+@media screen and (min-width: 768px) {
+    /* Header */
+    nav {
+
+        display: block;
+        box-shadow: none;
+        position: relative;
+        padding-right: 1rem;
+        width: fit-content;
+    }
+
+    #menu {
+        display: flex;
+    }
+
+    #menu > li {
+        padding-left: 1rem;
+    }
+
+    .nav-toggle-label {
+        display: none;
+    }
+
+#logo {
+        font-size: 280%;
+        margin: 0 0.5rem;
+        line-height: 75px;
+    }
+        /* Main content */
+    main {
+        /* Push main content down to accommodate larger header */
+        margin-top: 79px;
+    }
+
+}
+
+/* Large devices (laptops and desktops, 992px and up) */
+@media screen and (min-width: 992px) {
+    #menu a:hover{
+        border-bottom: 1px solid yellowgreen;
+    }
 }
