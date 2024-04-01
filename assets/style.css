@@ -1,0 +1,33 @@
+/* Asterisk wildcard selector */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* General styles */
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    /* Generic project styles */
+    color: yellowgreen;
+}
+
+
+/* Header */
+header {
+    background-color: yellow;
+}
+
+/* Main content */
+main {
+    background-color: lightgrey;
+    /* Make main element take up any surplus space to push footer down */
+    flex: 1 0 auto;
+}
+
+/* Footer */
+footer {
+    background-color: lightpink;
+}
