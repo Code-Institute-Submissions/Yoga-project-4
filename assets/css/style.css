@@ -131,6 +131,26 @@ main {
     color: darkgreen;
 }
 
+ /* Reasons section */
+
+ #reasons {
+
+    width: 90%;
+    margin: 20px auto;
+
+ }
+
+  h3 {
+    width: 90%;
+    margin: 20px auto;
+
+   
+}
+
+p { 
+    padding: 0 20px;
+}
+
 /* Footer */
 footer {
     background-color: lightpink;
